@@ -1,0 +1,17 @@
+$enable-rounded: true !default;
+
+$borderRadius-outer: .25rem/*4px*/;
+$borderRadius-inner: calc(#{$borderRadius-outer} - 1px);
+
+$fontSize: 0.875rem;
+$lineHeight: $fontSize * 1.395;
+
+$fontSize-heading: 1rem;
+$fontWeight-medium: 700;
+
+$fontSize-title: 1rem;
+$fontSize-description: 0.875rem;
+
+$color-dark: #242424;
+$color-heading: $color-dark;
+$color-text: lighten($color-dark, 5%);
