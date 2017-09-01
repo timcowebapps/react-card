@@ -6,7 +6,7 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 var config = {
 	entry: {
-		'card': path.resolve(__dirname, 'src/components/card.tsx')
+		'index': path.resolve(__dirname, 'src/components/index.ts')
 	},
 	output: {
 		path: path.resolve(__dirname, 'lib'),

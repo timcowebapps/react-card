@@ -16,8 +16,8 @@
 		"docs",
 		"lib"
 	],
-	"main": "./lib/card.js",
-	"types": "./lib/card.d.ts",
+	"main": "./lib/index.js",
+	"types": "./lib/index.d.ts",
 	"scripts": {
 		"prepublish": "npm run build-components",
 		"preclean-examples": "rm -f docs/*",
