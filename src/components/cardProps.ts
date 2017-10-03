@@ -1,6 +1,6 @@
 'use strict';
 
-/* Внешние зависимости */
+/* Внешние зависимости. */
 import * as React from 'react';
 
 export interface ICardProps {

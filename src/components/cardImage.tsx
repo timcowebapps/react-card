@@ -1,6 +1,6 @@
 'use strict';
 
-/* Внешние зависимости */
+/* Внешние зависимости. */
 import * as React from 'react';
 import * as PropTypes from 'prop-types';
 import { Classes } from 'timcowebapps-react-utils';
@@ -15,7 +15,7 @@ const CardImage: React.StatelessComponent<any> = (props: any) => {
 		...attributes
 	} = props;
 
-	return React.DOM.img({ ...attributes, className: cls });
+	return React.createElement('img', { ...attributes, className: cls });
 };
 
 CardImage.propTypes = propTypes;

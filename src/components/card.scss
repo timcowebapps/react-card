@@ -1,3 +1,7 @@
+@import '~timcowebapps-scss-dir/_global.scss';
+
+$global-enable-rounded: true;
+
 @import '~timcowebapps-scss-dir/mixins/_border-radius.scss';
 
 @import './_variables';

@@ -1,10 +1,10 @@
 'use strict';
 
-/* Внешние зависимости */
+/* Внешние зависимости. */
 import * as React from 'react';
 import { Classes } from 'timcowebapps-react-utils';
 
-/* Внутренние зависимости */
+/* Внутренние зависимости. */
 import { ICardProps } from './cardProps';
 import CardHeader from './cardHeader';
 
