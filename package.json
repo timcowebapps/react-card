@@ -1,6 +1,6 @@
 {
 	"name": "timcowebapps-react-card",
-	"version": "0.1.0",
+	"version": "0.1.0-rc.2",
 	"description": "Микрокомпонент карточки",
 	"author": "Victor Timoshin <victor-timoshin@hotmail.com>",
 	"license": "MIT",
