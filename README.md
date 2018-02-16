@@ -1,4 +1,6 @@
-## React-Card [![dependencies](https://david-dm.org/timcowebapps/react-card.svg)](https://david-dm.org/timcowebapps/react-card)
+## React-Card [![Discord](https://discordapp.com/api/guilds/402238411639095297/widget.png)](https://discord.gg/vCMcgwQ)
+
+[![dependencies](https://david-dm.org/timcowebapps/react-card.svg)](https://david-dm.org/timcowebapps/react-card)
 
 [![NPM](https://nodei.co/npm/timcowebapps-react-card.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/timcowebapps-react-card/)
 

@@ -1,0 +1,23 @@
+.#{$card-name} {
+	@include element('text') {
+		color: $card-text-color;
+		font-size: $card-text-fontSize;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		@include modifier('more') {
+			&::before {
+				content: '';
+				display: block;
+				height: 60px;
+				position: absolute;
+				left: $card-block-padding-left-right;
+				right: $card-block-padding-left-right;
+				bottom: 0;
+				background: linear-gradient(rgba(255, 255, 255, 0) 20%, rgb(255, 255, 255) 80%);
+			}
+		}
+	}
+}

@@ -1,0 +1,7 @@
+.#{$card-name} {
+	@include element('subtitle') {
+		color: $card-subtitle-color;
+		font-size: $card-subtitle-fontSize;
+		font-weight: $card-subtitle-fontWeight;
+	}
+}

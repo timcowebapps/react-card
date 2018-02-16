@@ -1,0 +1,33 @@
+.#{$card-name} {
+	@include element('footer') {
+		/* #region Шрифт (цвет, размер, жирность) */
+		color: $card-footer-color;
+		font-size: $card-footer-fontSize;
+		font-weight: $card-footer-fontWeight;
+		/* #endregion */
+		/* #region Фон */
+		background: $card-footer-background;
+		/* #endregion */
+		/* #region Закругленные нижние углы */
+		@if $global-enable-rounded and $card-enable-rounded {
+			@include border-radius(0 0 calc(#{$card-borderRadius} - 1px) calc(#{$card-borderRadius} - 1px));
+		}
+		/* #endregion */
+		/* #region Относительное позиционирование */
+		position: relative;
+		/* #endregion */
+		/* #region Внутренний и внешний отступ */
+		padding: $card-footer-padding;
+		margin: 0; /* Убираем отступ */
+		/* #endregion */
+
+		@include element('icon') {
+			position: relative;
+			display: inline-block;
+
+			&:not(:last-child) {
+				margin-right: 1.25rem;
+			}
+		}
+	}
+}

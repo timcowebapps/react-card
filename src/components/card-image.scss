@@ -1,0 +1,19 @@
+.#{$card-name} {
+	@include element('image') {
+		width: 100%;
+		display: block;
+		overflow: hidden;
+		position: relative;
+
+		@include modifier('top') {
+			width: 100%;
+			display: block;
+			overflow: hidden;
+			position: relative;
+			
+			@if $global-enable-rounded and $card-enable-rounded {
+				@include border-radius(calc(#{$card-borderRadius} - 1px) calc(#{$card-borderRadius} - 1px) 0 0);
+			}
+		}
+	}
+}

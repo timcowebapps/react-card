@@ -1,17 +1,47 @@
-$enable-rounded: true !default;
-
-$borderRadius-outer: .25rem/*4px*/;
-$borderRadius-inner: calc(#{$borderRadius-outer} - 1px);
-
-$fontSize: 0.875rem;
-$lineHeight: $fontSize * 1.395;
-
-$fontSize-heading: 1rem;
-$fontWeight-medium: 700;
-
-$fontSize-title: 1rem;
-$fontSize-description: 0.875rem;
-
-$color-dark: #242424;
-$color-heading: $color-dark;
-$color-text: lighten($color-dark, 5%);
+/* #region Shared */
+$card-name: 'card' !default;
+$card-enable-rounded: true !default;
+$card-borderRadius: 4px !default;
+$card-shadow: 0 2px 2px 0 #ddd !default;
+$card-shadowHover: 0 2px 2px 0 #ddd !default;
+/* #endregion */
+/* #region Card */
+$card-background: #fff !default;
+$card-borderThickness: 1px !default;
+$card-borderColor: #50bbf0 !default;
+$card-borderColorHover: #bf7be9 !default;
+/* #endregion */
+/* #region Head */
+$card-head-color: #000 !default;
+$card-head-fontSize: 0.8125rem !default;
+$card-head-fontWeight: bold !default;
+$card-head-background: transparent !default;
+$card-head-padding: 0.625rem 1.25rem !default;
+/* #endregion */
+/* #region Image */
+/* #endregion */
+/* #region Block */
+$card-block-padding-top-bottom: 1.25rem !default;
+$card-block-padding-left-right: 1.25rem !default;
+/* #endregion */
+/* #region Subtitle */
+$card-subtitle-color: #000 !default;
+$card-subtitle-fontSize: 0.875rem !default;
+$card-subtitle-fontWeight: bold !default;
+/* #endregion */
+/* #region Title */
+$card-title-color: #000 !default;
+$card-title-fontSize: 0.875rem !default;
+$card-title-fontWeight: bold !default;
+/* #endregion */
+/* #region Text */
+$card-text-color: #000 !default;
+$card-text-fontSize: 0.875rem !default;
+/* #endregion */
+/* #region Footer */
+$card-footer-color: #000 !default;
+$card-footer-fontSize: 0.8125rem !default;
+$card-footer-fontWeight: normal !default;
+$card-footer-background: transparent !default;
+$card-footer-padding: .75rem 1.25rem !default;
+/* #endregion */

@@ -1,8 +1,48 @@
-@import '~timcowebapps-scss-dir/_global.scss';
+.#{$card-name} {
+	position: relative;
+	display: block;
 
-$global-enable-rounded: true;
+	/* #region Фон в виде псевдоэлемента */
+	&:before {
+		content: '';
+		background: $card-background;
+		/* #region Абсолютное позиционирование */
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		/* #endregion */
 
-@import '~timcowebapps-scss-dir/mixins/_border-radius.scss';
+		@if $global-enable-rounded and $card-enable-rounded {
+			@include border-radius($card-borderRadius);
+		}
+	}
+	/* #endregion */
 
-@import './_variables';
-@import './_base';
+	@include modifier('bordered') {
+		background: $card-borderColor;
+		padding: $card-borderThickness;
+
+		@if $global-enable-rounded and $card-enable-rounded {
+			@include border-radius($card-borderRadius);
+		}
+
+		&:before {
+			top: $card-borderThickness;
+			right: $card-borderThickness;
+			bottom: $card-borderThickness;
+			left: $card-borderThickness;
+
+			@if $global-enable-rounded and $card-enable-rounded {
+				@include border-radius(calc(#{$card-borderRadius} - 1px));
+			}
+		}
+
+		&:focus,
+		&:hover {
+			background: $card-borderColorHover;
+			@include box-shadow($card-shadowHover);
+		}
+	}
+}

@@ -1,0 +1,16 @@
+.#{$card-name} {
+	position: relative;
+	display: block;
+
+	@include element('title') {
+		color: $card-title-color;
+		font-size: $card-title-fontSize;
+		font-weight: $card-title-fontWeight;
+		margin-bottom: 0.4375rem;
+
+		/* Стили шрифта */
+		font-size: 1rem;
+		font-weight: 700;
+		line-height: 1.25rem;
+	}
+}

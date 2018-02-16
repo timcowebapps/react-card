@@ -1,0 +1,7 @@
+.#{$card-name} {
+	@include element('block') {
+		position: relative;
+		padding: $card-block-padding-top-bottom $card-block-padding-left-right;
+		overflow: hidden;
+	}
+}

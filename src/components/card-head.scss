@@ -1,0 +1,30 @@
+.#{$card-name} {
+	@include element('head') {
+		/* #region Шрифт (цвет, размер, жирность) */
+		color: $card-head-color;
+		font-size: $card-head-fontSize;
+		font-weight: $card-head-fontWeight;
+		/* #endregion */
+		/* #region Фон */
+		background: $card-head-background;
+		/* #endregion */
+		/* #region Закругленные верхнии углы */
+		@if $global-enable-rounded and $card-enable-rounded {
+			@include border-radius(calc(#{$card-borderRadius} - 1px) calc(#{$card-borderRadius} - 1px) 0 0);
+		}
+		/* #endregion */
+		/* #region Относительное позиционирование */
+		position: relative;
+		/* #endregion */
+		/* #region Внутренний и внешний отступ */
+		padding: $card-head-padding;
+		margin: 0; /* Убираем отступ */
+		/* #endregion */
+
+		@include not-modifier('multiline') {
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+	}
+}
